@@ -16,6 +16,10 @@ body {
     font-family: "League Gothic", sans-serif;
 }
 
+main {
+    width: 100%;
+}
+
 header {
     background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.74));
 }
@@ -91,6 +95,7 @@ header {
 }
 
 section.about {
+
     margin: auto;
     margin-top: -100px;
 }
@@ -98,7 +103,7 @@ section.about {
 
 .about {
     background-color: white;
-    width: 1280px;
+    width: 70%;
     height: 100%;
     text-align: center;
     position: relative; 

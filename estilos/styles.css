@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../midia/Gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "League Gothic", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.74));
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    margin-left: 70px;
+}
+
+.logo-header img{
+    width: 150px;
+    margin-left: 30px;
+}
+
+.menu-content {
+    margin-right: 170px;
+}
+
+.menu-content li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    text-shadow: 0px 4px 4px black;
+}
+
+.image-header {
+    position: relative;
+}
+
+.image-header > img{
+    width: 100%;
+    opacity: 70%;
+}
+
+.text-image {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    text-shadow: 3px 4px black;
+    font-size: 4em;
+    font-weight: light;
+    letter-spacing: 2px;
+    color: white;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-image > .second-text-image {
+    width: 250px;
+    font-family: "League Gothic", sans-serif;
+}
+
+.second-text-image {
+    margin-top: 45px;
+    font-size: 40px;
+    text-shadow: none;
+    border: 2px solid white;
+}
+
+section.about {
+    margin: auto;
+    margin-top: -100px;
+}
+
+
+.about {
+    background-color: white;
+    width: 1280px;
+    height: 100%;
+    text-align: center;
+    position: relative; 
+    z-index: 1;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.about h1 {
+    font-size: 4em;
+    font-family: "League Gothic", sans-serif;
+    letter-spacing: 3px;
+    padding: 20px;
+    text-shadow: 2px 2px #7661F6;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text {
+    width: 400px;
+    font-size: 2em;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-image > img {
+    width: 500px;
+    padding: 20px;
+}
+
+.particip {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+}
+
+.particip-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+.bola {
+    width: 450px; 
+    height: 450px; 
+    border: 2px solid #000; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+    border: 3px solid; 
+    position: relative;
+}
+
+.bola::before {
+    content: ''; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+    border: 3px solid transparent; 
+    border-top-color: white; 
+    border-bottom-color: white;
+    position: absolute; 
+    animation: girarBorda 3s infinite; 
+}
+
+
+.bola img {
+    width: 85%;
+    height: 80%;
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes girarBorda {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.redes {
+    display: flex;
+}
+
+.redes img {
+    width: 50px;
+    padding: 8px;
+}
+
+.particip-foto h2 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 4px #50056b;
+    padding: 30px;
+}
+
+.particip-foto > img {
+    width: 80px;
+    padding-bottom: 10px;
+    margin-left: 400px;
+    margin-bottom: -70px;
+}
+
+.sobre-particip {
+    width: 500px;
+    font-size: 2em;
+    padding: 10px;
+    margin-left: -100px;
+}
+
+.sobre-particip span{
+    color: #71D641;
+    text-shadow: 2px 2px black;
+}
+
+.times {
+    margin-top: 30px;
+    width: 500px;
+}
+
+.title-times {
+    background-color: #6F10CD;
+    color: white;
+}
+
+.image-times {
+    background-color: #292862;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-times img{
+    width: 30px;
+    height: 70%;
+    padding-left: 30px;
+}
+
+.escolhas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.escolhas button {
+    width: 30px; 
+    height: 30px;
+    background-color: #b710b2; 
+    border: none; 
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 8px;
+}
